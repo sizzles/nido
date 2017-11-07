@@ -472,9 +472,9 @@ function TempHighLow (props) {
     // Props: high (string), low (string), unit (string), toggleUnit (function)
   return (
     <div className='tempHighLow'>
-            H: <Temperature temp={props.high} unit={props.unit}
+            <Temperature temp={props.high} unit={props.unit}
               toggleUnit={props.toggleUnit} />
-            L: <Temperature temp={props.low} unit={props.unit}
+            <Temperature temp={props.low} unit={props.unit}
               toggleUnit={props.toggleUnit} />
     </div>
   )

@@ -18,8 +18,59 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* SVG icons */
+/* Dashboard flexbox setup */
 
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+#toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#nidoState {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 3;
+}
+#nidoState .tempRHToggle {
+  display: flex;
+  flex-grow: 2.5;
+  justify-content: center;
+  align-items: center;
+}
+#changeSetpoint {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1.25;
+}
+#changeMode {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1.25;
+}
+
+#weather {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.temperature .tempUnit {
+  height: 35%;
+}
+
+/* SVG icons */
 .icon {
   width: 1em;
   height: 1em;
@@ -33,7 +84,6 @@ body {
 }
 
 /* Loading component */
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
