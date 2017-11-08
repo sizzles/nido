@@ -262,7 +262,7 @@ class Dashboard extends React.Component {
       )
     } else {
       return (
-        <div id='dashboard'>
+        <div>
           <Loading />
         </div>
       )
